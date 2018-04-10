@@ -1,0 +1,19 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+//Hide the Search Dropdown arrow
+.dropdown-search::after {
+  display:none;
+}
+
+.dropdown-menu-search {
+  min-width: 275px;
+}
+
+.thumbnail {
+  width:100px;
+  height:100px
+}
+
+.story-time{
+  font-family: courier,'new courier';
+}
