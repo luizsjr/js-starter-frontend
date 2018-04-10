@@ -1,6 +1,6 @@
-import 'bootstrap'
-import './scss/index.scss'
-import {library} from '@fortawesome/fontawesome'
+import 'bootstrap';
+import './scss/index.scss';
+import {library} from '@fortawesome/fontawesome';
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
 import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
 
