@@ -1,13 +1,18 @@
 {
   "parser": "babel-eslint",
-  "extends": "google",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "modules": true
-    }
+    "ecmaVersion": 7,
+    "sourceType": "module"
   },
   "rules": {
-    "semi": 0,
-    "comma-dangle": 0
+    "no-console" : 1
+  },
+  "env": {
+    "jquery": true
   }
 }

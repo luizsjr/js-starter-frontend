@@ -1,14 +1,14 @@
 import 'bootstrap'
 import './scss/index.scss'
-import fontawesome from '@fortawesome/fontawesome';
+import {library} from '@fortawesome/fontawesome'
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
 import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
 
-//Font Awesome Search Icon
-fontawesome.library.add(faSearch, faChevronRight);
+// Font Awesome Search Icon
+library.add(faSearch, faChevronRight);
 
-//Change navbar active
-$(".nav-link").on("click", function() {
+// Change navbar active
+$('.nav-link').click( (event) => {
   $('li.active').removeClass('active');
-  $(this).closest('li').addClass('active');
+  $(event.currentTarget).closest('li').addClass('active');
 });
