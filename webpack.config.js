@@ -66,7 +66,15 @@ module.exports = {
       jQuery: 'jquery'
     }),
     new HtmlWebPackPlugin({
-      template: './src/index.html'
+      template: './src/index.ejs',
+      title: 'StoryStrap',
+      nav: [{
+        link:'/books',
+        text: 'Books'
+      }, {
+        link:'/authors',
+        text: 'Authors'
+      }]
     }),
     new ExtractTextPlugin('styles.css')
   ]
