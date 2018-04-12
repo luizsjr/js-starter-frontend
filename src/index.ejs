@@ -24,7 +24,7 @@
             </li>
             <% for(var i=0; i < htmlWebpackPlugin.options.nav.length; i++) { %>
             <li class="nav-item">
-              <a class="nav-link" href="<%=htmlWebpackPlugin.options.nav[i].link%>"><%=htmlWebpackPlugin.options.nav[i].text%></a>
+              <a id="<%=htmlWebpackPlugin.options.nav[i].id%>" class="nav-link" href="#"><%=htmlWebpackPlugin.options.nav[i].text%></a>
             </li>
             <% } %>
           </ul>
@@ -54,30 +54,9 @@
     </div>
 
     <!-- Stories -->
-    <div class="row py-3">
-      <div class="text-center col-md-2 col-sm-3">
-        <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/40.jpg" class="rounded-circle thumbnail"></a>
-      </div>
-      <div class="col-md-10 col-sm-9">
-        <h4>Repurpose Content to Reach a Wider Audience</h4>
-        <h5><span class="badge badge-secondary">97thfloor.com</span></h5>
-        <h6><small class="text-muted story-time">2 hours ago  • <a href="#" class="text-muted">Read More</a></small></h6>
-      </div>
-    </div>
+    <div id="content">
 
-    <hr>
-    <div class="row py-3">
-      <div class="text-center col-md-2 col-sm-3">
-        <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/women/56.jpg" class="rounded-circle thumbnail"></a>
-      </div>
-      <div class="col-md-10 col-sm-9">
-        <h4>Dramatically Raise the Value of Any Piece of Content with These 27 Tactics</h4>
-        <h5><span class="badge badge-secondary">searchenginewatch.com</span></h5>
-        <h6><small class="text-muted story-time">12 hours ago  • <a href="#" class="text-muted">Read More</a></small></h6>
-      </div>
     </div>
-    <hr>
-
     <a href="#" class="btn btn-primary float-right">More <i class="fas fa-chevron-right"></i></a>
 
   </div>

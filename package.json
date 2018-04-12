@@ -7,7 +7,7 @@
   "author": "luizsjr",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --open --mode development --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --open --mode development --hot --config webpack.config.js",
     "security-check": "nsp check",
     "prestart": "npm run security-check",
     "start": "nodemon --watch webpack.config.js --exec npm run dev",

@@ -69,10 +69,10 @@ module.exports = {
       template: './src/index.ejs',
       title: 'StoryStrap',
       nav: [{
-        link:'/books',
+        id:'books',
         text: 'Books'
       }, {
-        link:'/authors',
+        id:'authors',
         text: 'Authors'
       }]
     }),
