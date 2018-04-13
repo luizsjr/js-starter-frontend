@@ -66,8 +66,8 @@ module.exports = {
       jQuery: 'jquery'
     }),
     new HtmlWebPackPlugin({
-      template: './src/index.ejs',
-      title: 'StoryStrap',
+      template: './src/views/index.ejs',
+      title: 'BookStore',
       nav: [{
         id:'books',
         text: 'Books'

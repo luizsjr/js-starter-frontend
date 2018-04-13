@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap App</title>
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script> -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
@@ -20,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a id="home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <% for(var i=0; i < htmlWebpackPlugin.options.nav.length; i++) { %>
             <li class="nav-item">
@@ -31,7 +29,7 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle dropdown-search" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-search"></i>
+                  <i id="search" class="fas fa-search"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="navbarDropdown">
                 <form class="form-inline m-2">

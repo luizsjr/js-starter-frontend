@@ -1,5 +1,10 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+//Avoid "centering jumps"
+html {
+  overflow-y: scroll;
+}
+
 //Hide the Search Dropdown arrow
 .dropdown-search::after {
   display:none;
