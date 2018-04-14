@@ -23,7 +23,7 @@ $('.nav-link#home').click( () => {
 });
 
 $('.nav-link#books').click( () => {
-  books.loadContent();
+  books.loadBookList();
 });
 
 $('.nav-link#authors').click( () => {
