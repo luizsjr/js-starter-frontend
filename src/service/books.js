@@ -9,7 +9,6 @@ function loadBook(book) {
 }
 
 function renderBookListHtml(booksList) {
-  var i = 0;
   let booksHtml = '';
   booksList.forEach(book => {
     booksHtml += `
@@ -20,7 +19,7 @@ function renderBookListHtml(booksList) {
     <div class="col-md-10 col-sm-9">
     <h4>${book.title}</h4>
     <h5><span class="badge badge-secondary">${book.author}</span></h5>
-    <h6><small class="text-muted story-time"><a href="#" id="books/${i++}" class="text-muted">Read More</a></small></h6>
+    <h6><small class="text-muted story-time"><a href="#" id="books/${book._id}" class="text-muted">Read More</a></small></h6>
     </div>
     </div>
     <hr>
